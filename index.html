@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Quantistico - Una Rivoluzione Tecnologica</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: var(--dark);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: var(--secondary);
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Computer Quantistico</h1>
+            <p>La prossima frontiera della computazione</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#intro">Introduzione</a></li>
+                <li><a href="#funziona">Come Funziona</a></li>
+                <li><a href="#vantaggi">Vantaggi</a></li>
+                <li><a href="#visita">La Nostra Visita</a></li>
+                <li><a href="#database">Database Quantistico</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="intro">
+            <div class="card">
+                <h2>Cos'è il Computer Quantistico?</h2>
+                <p>Il computer quantistico è un tipo di computer che utilizza i principi della meccanica quantistica per elaborare e risolvere problemi complessi in modo che i computer tradizionali non potrebbero fare. A differenza dei computer tradizionali, che utilizzano bit per rappresentare informazioni, i computer quantistici utilizzano <strong>qubit</strong>.</p>
+                
+                <p>Per capire meglio come funziona, è utile sapere alcune cose sulla meccanica quantistica, che è la parte della fisica che studia il comportamento delle particelle su scala molto piccola, come gli atomi e le particelle subatomiche. Inoltre la meccanica quantistica applicata ai computer ha determinato una vera rivoluzione.</p>
+                
+                <p>Infatti la creazione di un computer quantistico permetterebbe di ridurre notevolmente il tempo dei calcoli rispetto ad un computer classico, rendendo vulnerabile ogni attuale sistema crittografico. Alla luce di questo fatto, è chiaro che non basta più aumentare la lunghezza delle chiavi o la complessità degli algoritmi per rendere sicuro un documento da trasmettere, ma bisogna ricorrere a qualcosa di completamente nuovo.</p>
+            </div>
+        </section>
+        
+        <section id="funziona">
+            <div class="card">
+                <h2>Come Funziona?</h2>
+                <div class="grid">
+                    <div>
+                        <h3>Computer Tradizionali</h3>
+                        <p>Utilizzano bit che possono essere solo 0 o 1. I dati sono rappresentati in modo binario e le operazioni vengono eseguite in sequenza.</p>
+                    </div>
+                    <div>
+                        <h3>Computer Quantistici</h3>
+                        <p>Utilizzano qubit che possono essere sia 0 che 1 contemporaneamente (sovrapposizione quantistica) e possono essere "intrecciati" con altri qubit (entanglement), permettendo operazioni simultanee su molteplici stati.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="vantaggi">
+            <div class="card">
+                <h2>Vantaggi dei Computer Quantistici</h2>
+                <ul>
+                    <li><strong>Simulazioni scientifiche:</strong> Aiuta a simulare fenomeni che sono difficili o impossibili da riprodurre con i metodi tradizionali, come reazioni chimiche complesse o sistemi quantistici.</li>
+                    <li><strong>Ottimizzazione:</strong> Migliora l'efficienza in settori come il trasporto e la gestione delle risorse, risolvendo problemi di ottimizzazione combinatoria molto più velocemente.</li>
+                    <li><strong>Crittografia:</strong> Permette di creare sistemi di sicurezza quasi impossibili da violare. Un computer quantistico sufficientemente potente potrebbe violare gli attuali sistemi crittografici come RSA, ma abilita anche la crittografia quantistica (es. QKD - Quantum Key Distribution), teoricamente inviolabile grazie alle leggi della fisica quantistica.</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section id="visita">
+            <div class="card">
+                <h2>Visita al Computer Quantistico - Università di Napoli</h2>
+                <p>Nonostante ci siano ancora molte sfide tecniche da superare, il calcolo quantistico sta facendo rapidi progressi in quanto esiste già e lo si può trovare all'università di Napoli Federico II nella quale noi stessi, studenti dell'istituto Della Corte Vanvitelli, siamo andati in prima persona accompagnati dalla prof.ssa Maria Emilia Amendola e dal prof. Domenico Montemurro, colui che si è occupato di spiegarci le due parti (hardware e software) del computer quantistico.</p>
+                
+                <div class="gallery">
+                    <img src="Picture1.jpg" alt="Visita al computer quantistico">
+                    <img src="Picture2.jpg" alt="Computer quantistico all'Università di Napoli">
+                    <img src="Picture3.jpg" alt="Sistema di raffreddamento">
+                    <img src="Picture4.jpg" alt="Qubit superconduttori">
+                    <img src="Picture5.jpg" alt="Studenti durante la visita">
+                    <img src="Picture6.jpg" alt="Presentazione del computer quantistico">
+                </div>
+                
+                <h3>Condizioni operative</h3>
+                <p>I computer quantistici richiedono temperature molto basse per mantenere i qubit in uno stato quantistico stabile. Ad esempio, i qubit superconduttori devono essere raffreddati a temperature vicine allo zero assoluto, ovvero <strong>-273.15°C</strong>. Per questo motivo, un sistema di raffreddamento, come un criostato, che è un dispositivo specializzato nel mantenere queste condizioni di raffreddamento estreme, è fondamentale per il funzionamento di un computer quantistico.</p>
+                
+                <p>Inoltre non c'è una "durata limitata" del raffreddamento in sé, poiché il sistema deve essere mantenuto a bassa temperatura finché il computer è in funzione. Questo significa che il computer quantistico può operare per diverse ore o giorni, ma la temperatura deve essere costantemente monitorata e regolata.</p>
+            </div>
+        </section>
+        
+        <section id="database">
+            <div class="card">
+                <h2>Database sul Computer Quantistico</h2>
+                <p>Questo database è stato pensato per raccogliere e organizzare dati relativi ai computer quantistici, ovvero, informazioni sugli algoritmi, sui dispositivi quantistici, sugli sviluppi teorici e sui risultati degli esperimenti.</p>
+                
+                <h3>Tabelle principali:</h3>
+       <div style="width: 100%; overflow: auto;">
+    <img src="Screenshot 2025-06-19 195102.png" style="max-width: 100%; height: auto; display: block;">
+</div>
+                <h4>Dispositivi Quantistici</h4>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome </th>
+                        <th>Produttore</th>
+                        <th>Anno</th>
+                        <th>Tipo</th>
+                        <th>Numero</th>
+                        <th>Tempo Coerenza</th>
+                        <th>Descrizione </th>
+                        
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>IBM Quantum System One</td>
+                        <td>IBM</td>
+                        <td>2019</td>
+                        <td>superconduttore</td>
+                        <td>27</td>
+                        <td>100.5</td>
+                        <td>Primo computer quantistico commerciale di IBM con 27 qubit</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sycamore</td>
+                        <td>Google</td>
+                        <td>2019</td>
+                        <td>superconduttore</td>
+                        <td>53</td>
+                        <td>75.2</td>
+                        <td>Processore a 53 qubit che ha dimostrato la supremazia quantistica</td>
+                    </tr>
+                </table>
+                
+                <h4>Algoritmo Quantistico</h4>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome </th>
+                        <th>Anno</th>
+                        <th>Sviluppatore</th>
+                        <th>Compleessità</th>
+                        <th>Descrizione</th>
+                        <th>Applicazioni</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Algoritmo di Shor</td>
+                        <td>Peter Shor</td>
+                        <td>1994</td>
+                        <td>O((log N)^3)</td>
+                        <td>Fattorizzazione di numeri interi in tempo polinomiale</td>
+                        <td>Crittografia, rottura RSA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Algoritmo di Grover</td>
+                        <td>Lov Grover</td>
+                        <td>1996</td>
+                        <td>O(√N)</td>
+                        <td>Ricerca in database non ordinati con speedup quadratico</td>
+                        <td>Ricerca, ottimizzazione</td>
+                    </tr>
+                </table>
+                
+                <h4>Esperimenti </h4>
+                <table>
+                    <tr>
+                        <th>ID_esperimento</th>
+                        <th>Nome Esperimento</th>
+                        <th>ID_dispositivo</th>
+                        <th>Data_inizio</th>
+                        <th>Data_fine</th>
+                        <th>Obiettivo</th>
+                        <th>Risultato</th>
+                        <th>Pubblicazione</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Supremazia Quantistica Google</td>
+                        <td>2</td>
+                        <td>2019-10-01</td>
+                        <td>2019-10-31</td>
+                        <td>Dimostrare che un computer quantistico può risolvere un problema insolubile per i computer classici</td>
+                        <td>Successo: completato in 200 secondi un calcolo stimato in 10.000 anni per Summit</td>
+                        <td>Nature, 2019</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Simulazione molecolare IBM</td>
+                        <td>1</td>
+                        <td>2020-06-15</td>
+                        <td>2020-07-20</td>
+                        <td>Simulare la struttura elettronica di una piccola molecola</td>
+                        <td>Ottenuti risultati promettenti per molecole semplici</td>
+                        <td>Physical Review Research, 2020</td>
+                    </tr>
+                </table>
+                
+                <h4>Esperimenti Algoritmi</h4>
+                <table>
+                    <tr>
+                        <th>ID_esperimenti</th>
+                        <th>ID_algoritmo</th>
+                        <th>Versione</th>
+                        <th>Parametri_configurazione</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>v2.1</td>
+                        <td>Numero iterazioni: 20, Ampiezza iniziale: 0.785</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>v1.0</td>
+                        <td>Ansatz: UCCSD, Ottimizzatore: COBYLA</td>
+                    </tr>
+                </table>
+                
+                <h4>Risultati Sperimentali</h4>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>ID_esperimento</th>
+                        <th>Metrica</th>
+                        <th>Valore</th>
+                        <th>Unità_Misura</th>
+                        <th>Note</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Tempo esecuzione</td>
+                        <td>200</td>
+                        <td>secondi</td>
+                        <td>Tempo per completare il calcolo quantistico</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>Fedeltà media</td>
+                        <td>0.9923</td>
+                        <td>scala 0-1</td>
+                        <td>Fedeltà media delle operazioni</td>
+                    </tr>
+                </table>
+
+                  <h4>Sviluppi Teorici</h4>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Titolo</th>
+                        <th>Anno</th>
+                        <th>Autori</th>
+                        <th>Campo_Applicazioni</th>
+                        <th>Descrizione</th>
+                        <th>Impatto</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Threshold Theorem per la correzione d'errore quantistico</td>
+                        <td>1996</td>
+                        <td>Peter Shor, Andrew Steane</td>
+                        <td>Quantum Error Correction</td>
+                        <td>Dimostrazione che sotto una certa soglia di errore, la correzione è possibile</td>
+                        <td>alto</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Quantum Supremacy: algoritmi e limiti</td>
+                        <td>2018</td>
+                        <td>John Preskill</td>
+                        <td>Teoria della complessità quantistica</td>
+                        <td>Definizione formale del concetto di supremazia quantistica</td>
+                        <td>alto</td>
+                    </tr>
+                </table>
+
+                 <h4>Collegamenti Teorici Algoritmi</h4>
+                <table>
+                    <tr>
+                        <th>ID_sviluppo</th>
+                        <th>ID_algoritmo</th>
+                        <th>Tipo_relazione</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Teoria alla base dell'algoritmo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Contesto teorico per l'applicazione</td>
+                    </tr>
+                </table>
+
+<section id="php-code">
+    <div class="card">
+        <h2>Codice PHP dell'Interfaccia Database</h2>
+        <p>Di seguito il listato completo del file PHP che gestisce l'interfaccia con il database quantistico:</p>
+        
+        <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;">
+            <code>
+&lt;?php
+// config.php - File di configurazione del database
+$host = "localhost";
+$username = "root";
+$password = "";
+$dbname = "computerquantisticodb";
+
+// Connessione al database
+$conn = new mysqli($host, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connessione fallita: " . $conn->connect_error);
+}
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="it"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Quantum Computing Database&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #3498db; color: white; }
+        tr:hover { background-color: #f5f5f5; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #2980b9; }
+        .section { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        .success { color: green; }
+        .error { color: red; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Quantum Computing Database Interface&lt;/h1&gt;
+        
+        &lt;!-- Sezione per visualizzare i dispositivi quantistici --&gt;
+        &lt;div class="section"&gt;
+            &lt;h2&gt;Dispositivi Quantistici&lt;/h2&gt;
+            &lt;?php
+            $sql = "SELECT * FROM Dispositivi_Quantistici";
+            $result = $conn-&gt;query($sql);
+            
+            if ($result-&gt;num_rows &gt; 0) {
+                echo "&lt;table&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Nome&lt;/th&gt;&lt;th&gt;Produttore&lt;/th&gt;&lt;th&gt;Anno&lt;/th&gt;&lt;th&gt;Tipo Qubit&lt;/th&gt;&lt;th&gt;Numero Qubit&lt;/th&gt;&lt;th&gt;Tempo Coerenza&lt;/th&gt;&lt;/tr&gt;";
+                while($row = $result-&gt;fetch_assoc()) {
+                    echo "&lt;tr&gt;
+                            &lt;td&gt;".$row["ID_Dispositivo"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Nome"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Produttore"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Anno_Rilascio"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Tipo_Qubit"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Numero_Qubit"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Tempo"]." µs&lt;/td&gt;
+                          &lt;/tr&gt;";
+                }
+                echo "&lt;/table&gt;";
+            } else {
+                echo "&lt;p&gt;Nessun dispositivo trovato&lt;/p&gt;";
+            }
+            ?&gt;
+        &lt;/div&gt;
+        
+        &lt;!-- Sezione per visualizzare gli algoritmi --&gt;
+        &lt;div class="section"&gt;
+            &lt;h2&gt;Algoritmi Quantistici&lt;/h2&gt;
+            &lt;?php
+            $sql = "SELECT * FROM Algoritmi_Quantistici";
+            $result = $conn-&gt;query($sql);
+            
+            if ($result-&gt;num_rows &gt; 0) {
+                echo "&lt;table&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Nome&lt;/th&gt;&lt;th&gt;Sviluppatore&lt;/th&gt;&lt;th&gt;Anno&lt;/th&gt;&lt;th&gt;Complessità&lt;/th&gt;&lt;th&gt;Applicazioni&lt;/th&gt;&lt;/tr&gt;";
+                while($row = $result-&gt;fetch_assoc()) {
+                    echo "&lt;tr&gt;
+                            &lt;td&gt;".$row["ID_Algoritmo"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Nome"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Sviluppatore"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Anno_Sviluppo"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Complessità"]."&lt;/td&gt;
+                            &lt;td&gt;".substr($row["Applicazioni"], 0, 50)."...&lt;/td&gt;
+                          &lt;/tr&gt;";
+                }
+                echo "&lt;/table&gt;";
+            } else {
+                echo "&lt;p&gt;Nessun algoritmo trovato&lt;/p&gt;";
+            }
+            ?&gt;
+        &lt;/div&gt;
+        
+        &lt;!-- Sezione per visualizzare gli esperimenti con join --&gt;
+        &lt;div class="section"&gt;
+            &lt;h2&gt;Esperimenti Recenti&lt;/h2&gt;
+            &lt;?php
+            $sql = "SELECT e.ID_Esperimento, e.Nome, e.Data_Inizio, e.Data_Fine, d.Nome AS Dispositivo, 
+                    GROUP_CONCAT(a.Nome SEPARATOR ', ') AS Algoritmi
+                    FROM Esperimenti e
+                    LEFT JOIN Dispositivi_Quantistici d ON e.ID_Dispositivo = d.ID_Dispositivo
+                    LEFT JOIN Esperimenti_Algoritmi ea ON e.ID_Esperimento = ea.ID_Esperimento
+                    LEFT JOIN Algoritmi_Quantistici a ON ea.ID_Algoritmo = a.ID_Algoritmo
+                    GROUP BY e.ID_Esperimento
+                    ORDER BY e.Data_Inizio DESC
+                    LIMIT 5";
+            $result = $conn-&gt;query($sql);
+            
+            if ($result-&gt;num_rows &gt; 0) {
+                echo "&lt;table&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Nome&lt;/th&gt;&lt;th&gt;Data Inizio&lt;/th&gt;&lt;th&gt;Data Fine&lt;/th&gt;&lt;th&gt;Dispositivo&lt;/th&gt;&lt;th&gt;Algoritmi&lt;/th&gt;&lt;/tr&gt;";
+                while($row = $result-&gt;fetch_assoc()) {
+                    echo "&lt;tr&gt;
+                            &lt;td&gt;".$row["ID_Esperimento"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Nome"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Data_Inizio"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Data_Fine"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Dispositivo"]."&lt;/td&gt;
+                            &lt;td&gt;".$row["Algoritmi"]."&lt;/td&gt;
+                          &lt;/tr&gt;";
+                }
+                echo "&lt;/table&gt;";
+            } else {
+                echo "&lt;p&gt;Nessun esperimento trovato&lt;/p&gt;";
+            }
+            ?&gt;
+        &lt;/div&gt;
+        
+        &lt;!-- Sezione per aggiungere un nuovo esperimento --&gt;
+        &lt;div class="section"&gt;
+            &lt;h2&gt;Aggiungi Nuovo Esperimento&lt;/h2&gt;
+            &lt;form method="post" action=""&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label for="nome"&gt;Nome Esperimento:&lt;/label&gt;
+                    &lt;input type="text" id="nome" name="nome" required&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="form-group"&gt;
+                    &lt;label for="dispositivo"&gt;Dispositivo:&lt;/label&gt;
+                    &lt;select id="dispositivo" name="dispositivo" required&gt;
+                        &lt;option value=""&gt;Seleziona un dispositivo&lt;/option&gt;
+                        &lt;?php
+                        $sql = "SELECT ID_Dispositivo, Nome FROM Dispositivi_Quantistici";
+                        $result = $conn-&gt;query($sql);
+                        while($row = $result-&gt;fetch_assoc()) {
+                            echo "&lt;option value='".$row["ID_Dispositivo"]."'&gt;".$row["Nome"]."&lt;/option&gt;";
+                        }
+                        ?&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="form-group"&gt;
+                    &lt;label for="data_inizio"&gt;Data Inizio:&lt;/label&gt;
+                    &lt;input type="date" id="data_inizio" name="data_inizio" required&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="form-group"&gt;
+                    &lt;label for="data_fine"&gt;Data Fine:&lt;/label&gt;
+                    &lt;input type="date" id="data_fine" name="data_fine"&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="form-group"&gt;
+                    &lt;label for="obiettivo"&gt;Obiettivo:&lt;/label&gt;
+                    &lt;textarea id="obiettivo" name="obiettivo" rows="3"&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+                
+                &lt;button type="submit" name="aggiungi_esperimento"&gt;Aggiungi Esperimento&lt;/button&gt;
+            &lt;/form&gt;
+            
+            &lt;?php
+            if (isset($_POST['aggiungi_esperimento'])) {
+                $nome = $conn-&gt;real_escape_string($_POST['nome']);
+                $dispositivo = $conn-&gt;real_escape_string($_POST['dispositivo']);
+                $data_inizio = $conn-&gt;real_escape_string($_POST['data_inizio']);
+                $data_fine = $conn-&gt;real_escape_string($_POST['data_fine']);
+                $obiettivo = $conn-&gt;real_escape_string($_POST['obiettivo']);
+                
+                $sql = "INSERT INTO Esperimenti (Nome, ID_Dispositivo, Data_Inizio, Data_Fine, Obiettivo)
+                        VALUES ('$nome', $dispositivo, '$data_inizio', ".($data_fine ? "'$data_fine'" : "NULL").", '$obiettivo')";
+                
+                if ($conn-&gt;query($sql) === TRUE) {
+                    echo "&lt;p class='success'&gt;Esperimento aggiunto con successo!&lt;/p&gt;";
+                } else {
+                    echo "&lt;p class='error'&gt;Errore: " . $sql . "&lt;br&gt;" . $conn-&gt;error . "&lt;/p&gt;";
+                }
+            }
+            ?&gt;
+        &lt;/div&gt;
+        
+        &lt;!-- Sezione per statistiche --&gt;
+        &lt;div class="section"&gt;
+            &lt;h2&gt;Statistiche del Database&lt;/h2&gt;
+            &lt;?php
+            $stats = [
+                "Dispositivi registrati" =&gt; "SELECT COUNT(*) FROM Dispositivi_Quantistici",
+                "Algoritmi quantistici" =&gt; "SELECT COUNT(*) FROM Algoritmi_Quantistici",
+                "Esperimenti completati" =&gt; "SELECT COUNT(*) FROM Esperimenti WHERE Data_Fine IS NOT NULL AND Data_Fine &lt; CURDATE()",
+                "Qubit totali (somma)" =&gt; "SELECT SUM(Numero_Qubit) FROM Dispositivi_Quantistici"
+            ];
+            
+            echo "&lt;table&gt;";
+            foreach ($stats as $label =&gt; $query) {
+                $result = $conn-&gt;query($query);
+                $value = $result-&gt;fetch_row()[0];
+                echo "&lt;tr&gt;&lt;td&gt;&lt;strong&gt;$label&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;$value&lt;/td&gt;&lt;/tr&gt;";
+            }
+            echo "&lt;/table&gt;";
+            ?&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;?php
+$conn-&gt;close();
+?&gt;
+            </code>
+        </pre>
+    </div>
+</section>
+
+
+
+
+
+
+            </body>
+</html>
